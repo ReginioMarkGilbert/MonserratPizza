@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+   font-family: 'Nunito', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+   transition: .2s linear;
+   font-size: 30px
+}
+
+html {
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 7.5rem;
+}
+
+body {
+   background-image: url(../images/bg-image.jpg);
+}
+
+section {
+   padding: 2rem;
+   margin: 0 auto;
+   max-width: 1200px;
+}
+
+.heading { /* "FAQ" and "OUR CUSTOMER" */
+   text-align: center;
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   margin-bottom: 2rem;
+   font-size: 29px;
+   color: white;
+   text-transform: uppercase;
+}
+
+.header .flex p {
+   /*Montserrat Pizza - Montserrat*/
+   color: #ffffff;
+   font-family: "Sansita Swashed", cursive;
+   font-size: 24px;
+   letter-spacing: 2px;
+}
+
+.header .flex p span {
+   /*Montserrat Pizza - Pizza*/
+   font-family: "sansinita swashed", cursive;
+   font-size: 24px;
+   letter-spacing: 2px;
+   line-height: 32px;
+   color: #ffe600;
+   text-align: center;
+   word-spacing: 0px;
+   display: block;
+   cursor: pointer;
+   margin-right: 40vh;
+}
+
+.header .flex .logo {
+   /* LOGO */
+   font-size: 2.5rem;
+   color: white;
+}
+
+.logo {
+   transition: transform 0.3s ease;
+   width: 60px;
+   height: 60px;
+}
+
+.logo:hover {
+   transform: rotate(30deg);
+}
+
+/* NAV MENU */
+.header {
+   /*nav bar*/
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   background-color: #121618;
+   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+   z-index: 1000;
+}
+
+.header .flex {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   position: relative;
+   right: 100px;
+}
+
+.navigation-menu { /* container nav */
+   display: flex;
+   list-style: none;
+   align-items: end;
+}
+
+.navigation-menu li { /* space between each nav text */
+   margin-right: 25px;
+}
+
+.navigation-menu li a { /* where we can move the whole nav */
+   color: white;
+   text-decoration: none;
+   font-size: 16px !important;
+   font-family: "Helvetica Neue", Arial, sans-serif;
+   transition: color 0.3s ease;
+
+   position: relative; /* move nav to right */
+   left: 18rem;
+}
+
+.navigation-menu li a:hover {
+   color: rgb(236, 77, 4);
+}
+
+.navigation-menu li a {
+   font-size: 16px;
+   font-family: "Poppins", sans-serif;
+}
+
+.header .flex .icons-container {
+   position: relative;
+   left: 150px;
+
+}
+
+.header .flex .icons-container div {
+   font-size: 2.5rem;
+   color: #666;
+   cursor: pointer;
+   margin-left: 1.7rem;
+}
+
+.header .flex .icons-container div:hover {
+   color: #e74c3c;
+}
+
+.header .flex .icons-container div span {
+   font-size: 1.7rem;
+   position: absolute;
+   bottom: 12px;
+   left: 8.3em;
+}
+
+#menu-btn {
+   display: none;
+}
+/* NAV MENU  - end -*/
+
+
+.home-bg {
+   background: url(../images/home-bg.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.home-bg .home .slide-container .slide>div {
+   margin-top: 2rem;
+   position: relative;
+   z-index: 1;
+}
+
+.home-bg .home .slide-container {
+   margin-top: 12rem;
+}
+
+.home-bg .home .slide-container .slide {
+   display: none;
+   align-items: center;
+   gap: 1.5rem;
+   flex-wrap: wrap;
+}
+
+.home-bg .home .slide-container .slide.active {
+   display: flex;
+}
+
+.home-bg .home .slide-container .slide .image {
+   flex: 1 1 40rem;
+   animation: fadeRight .4s linear;
+}
+
+.home-bg .home .slide-container .slide .image img {
+   /* rotating pizza*/
+   width: 100%;
+}
+
+.home-bg .home .slide-container .slide .content {
+   flex: 1 1 40rem;
+   text-align: center;
+   animation: fadeLeft .4s linear;
+}
+
+.home-bg .home .slide-container .slide .content h3 {
+   /*Homemade Pepperoni Pizza*/
+   color: #fff;
+   margin-bottom: 3rem;
+   text-transform: capitalize;
+   font-size: 7.5rem;
+   text-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+   line-height: 1;
+}
+
+.welcome-text {
+   font-size: 7rem;
+   font-family: "Nothing You Could Do", cursive;
+   font-weight: 900;
+   color: rgb(255, 38, 38);
+}
+
+.amazing-text {
+   color: white;
+   font-size: 4rem;
+   font-family: "Poppins", sans-serif;
+   line-height: 40px;
+   text-transform: uppercase;
+   font-weight: 900;
+}
+
+.order-text {
+   font-size: 20px;
+   font-family: "Poppins", sans-serif;
+   color: white;
+}
+
+.welcome-text,
+.amazing-text,
+.order-text {
+   opacity: 0;
+   transform: translateX(100%);
+   animation: slideInLeft 1.5s forwards;
+}
+
+@keyframes slideInLeft {
+   0% {
+      opacity: 0;
+      transform: translateX(100%);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+.home-bg .home .slide-container .slide .content .fa-angle-left,
+.home-bg .home .slide-container .slide .content .fa-angle-right {
+   height: 5rem;
+   width: 5rem;
+   line-height: 4.8rem;
+   font-size: 2rem;
+   color: #333;
+   background-color: #fff;
+   margin: 0 .5rem;
+   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+   cursor: pointer;
+   border-radius: .5rem;
+}
+
+.home-bg .home .slide-container .slide .content .fa-angle-left:hover,
+.home-bg .home .slide-container .slide .content .fa-angle-right:hover {
+   background-color: #e74c3c;
+   color: #fff;
+}
+
+/* box containers for the pizza images */
+.menu .box-container {
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 35rem);
+   gap: 1.5rem;
+   align-items: flex-start;
+   justify-content: center;
+   margin-top: 50px; /* pababain ng kaunti ang menu */
+}
+
+.menu .box-container .box {
+   /* border: 1px solid limegreen; */
+   background-color: transparent;
+   border-radius: 2rem;
+   padding: 2rem;
+   text-align: center;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   position: relative;
+}
+
+.menu .box-container .box:hover {
+   transform: scale(1.02);
+}
+
+.menu .box-container .box img {
+   width: 100%;
+   margin-bottom: 10px;
+}
+
+/* the box for the price */
+.menu .box-container .box .price {
+   /* color of the box*/
+   background-color: #121618;
+   border-radius: .5rem;
+   padding: .5rem 1rem;
+   font-size: 1.7rem;
+   color: #fff;
+   position: absolute;
+   top: 1rem;
+   left: 1rem;
+}
+
+.menu .box-container .box .price span {
+   font-size: 2.5rem;
+}
+
+.menu .box-container .box .name {
+   /*title for pizza, pizza 1 pizza 2 pizza 3...*/
+   font-size: 24px;
+   font-family: "Poppins", sans-serif;
+   color: #fff;
+   margin: .5rem 0;
+   font-weight: 400;
+   letter-spacing: 1px;
+   text-align: start;
+}
+
+div.Description {
+   font-size: 16px;
+   font-family: "Times New Roman", Times, serif;
+   text-align: start;
+   color: #ffffff;
+   margin-top: 20px;
+   margin-bottom: 10px;
+}
+
+.menu .box-container .box form {
+   display: flex;
+   gap: 1rem;
+}
+
+.menu .box-container .box form .qty {
+   width: 8rem;
+   border: .1rem solid #666;
+   padding: 1rem;
+   margin-top: 1rem;
+   border-radius: .5rem;
+   font-size: 1.8rem;
+   color: #333;
+}
+
+/* MENU ITEM ATTRIBUTES */
+element.style {
+   transition: all 0s ease 0s, all 0s ease-in-out 0s, all 0.3s ease 0s;
+   color: white;
+   border-color: rgb(250, 197, 100);
+}
+
+.menu-item-attributes {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: fit-content;
+}
+
+.menu-item-attributes li {
+   border: 1px solid rgba(255, 255, 255, 0.113);
+   cursor: pointer;
+   text-transform: uppercase;
+   font-size: 0.83rem;
+   font-family: "Poppins", sans-serif;
+   padding: 0.5rem;
+   text-transform: uppercase;
+   margin-right: 5px;
+   /* Add margin-right para sa spacing*/
+   padding: 1rem 1.5rem;
+   /* Adjust padding to increase container size - antok nako 3am na*/
+}
+
+.menu-item-attributes li:last-child {
+   margin-right: 0;
+}
+
+.menu-item-attributes li:hover {
+   border-color: orange;
+   /* Apply hover effect para kool*/
+}
+
+.menu-item-attributes li.active {
+   border-color: orange;
+}
+
+li {
+   font-size: 12.2px;
+   list-style: none;
+   font-family: 'Times New Roman', Times, serif;
+   color: #ffffff;
+}
+
+.flex-container {
+   display: flex;
+}
+
+/* second section */
+.second_section {
+   height: 28em;
+}
+
+.sec_section_container {
+   width: 70%;
+   position: relative; 
+}
+
+.sec_section_container img {
+   border-radius: 10px;
+   width: 30em;
+
+   position: absolute;
+   left: 70%;
+   top: 2em;
+}
+
+.sec_section_container .sec_heading{
+   font-family: "Poppins", sans-serif;
+   color: white;
+   font-size: 45px;
+   font-weight: 600;
+   width: 15em;
+   
+   position: absolute;
+   left: -7em;
+   top: 19rem;
+}
+
+.sec_section_container p {
+   color: white;
+   font-size: 24px;
+   font-weight: 350;
+   width: 35em;
+
+   position: absolute;
+   right: 285px;
+   top: 42rem;
+}
+
+/* FAQ SECTION */
+.faq_section {
+   display: flex;
+   max-width: 55em;
+}
+
+.faq_Heading_container {
+   padding-bottom: 20px;
+   margin-top: 3rem;
+   margin-left: 8rem;
+}
+
+.faq_heading {
+   max-width: 100%;
+   color: white;
+}
+
+.faq_heading h1 {
+   font-family: "Poppins", sans-serif;
+   font-weight: 700;
+   font-size: 45px;
+}
+
+.faq_heading p {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-size: 20px;
+}
+
+.faq_qa-container {
+   margin-top: 20px;
+   margin-left: 20rem;
+   max-width: 37em;
+}
+
+.qa_one {
+   margin-bottom: 20px;
+   color: white;
+   border-bottom: 1px solid white;
+   border-top: 1px solid white;
+}
+
+.qa {
+   margin-bottom: 20px;
+   color: white;
+   border-bottom: 1px solid white;
+}
+
+.qa_one h3 {
+   font-size: 18px;
+   margin-top: 30px;
+   margin-bottom: 20px;
+}
+
+.qa_one p {
+   font-size: 16px;
+   line-height: 1.5;
+   margin-bottom: 20px;
+}
+
+.qa h3 {
+   font-size: 18px;
+   margin-top: 30px;
+   margin-bottom: 20px;
+}
+
+.qa p {
+   font-size: 16px;
+   line-height: 1.5;
+   margin-bottom: 20px;
+}
+
+/* CUSTOMER REVIEWS */
+.heading_review {
+   text-align: center;
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   margin-bottom: 2em;
+   font-size: 35px;
+   color: white;
+   text-transform: uppercase;
+}
+
+
+.heading_review span {
+   color: #209653;
+   font-weight: 600;
+   font-size: 35px
+}
+
+.review .box {
+   margin-right: 30px;
+}
+
+
+.review .box-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+   margin-bottom: 4em;
+}
+
+.review .box-container .box {
+   text-align: center;
+   padding: 2rem;
+   border: 1rem solid #fff;
+   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+   border-radius: .5rem;
+   flex: 1 1 30rem;
+   background: #333;
+   margin-top: 6rem;
+}
+
+.review .box-container .box img {
+   height: 13rem;
+   width: 13rem;
+   border-radius: 50%;
+   border: 1rem solid #fff;
+   margin-top: -8rem;
+   object-fit: cover;
+}
+
+
+.review .box-container .box h3 {
+   font-size: 2.5rem;
+   color: #fff;
+   padding: .5rem 0;
+}
+
+.review .box-container .box .stars i {
+   font-size: 2rem;
+   color: #e74c3c;
+   padding: .5rem 0;
+}
+
+.review .box-container .box p {
+   font-size: 1.7rem;
+   color: #eee;
+   padding: 1rem 0;
+}
+
+.footer {
+   margin-top: 100px;
+}
+
+
+/* FOOTER */
+.footer .box-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+   gap: 1.5rem;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+.footer .box-container .box {
+   padding: 2rem;
+   text-align: center;
+   background-color: #fff;
+   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+   border-radius: .5rem;
+}
+
+.footer .box-container .box i {
+   height: 6rem;
+   width: 6rem;
+   line-height: 6rem;
+   font-size: 2rem;
+   color: #fff;
+   background-color: #e74c3c;
+   border-radius: 50%;
+   margin-bottom: .5rem;
+}
+
+.footer .box-container .box h3 {
+   font-family: "Poppins", sans-serif;
+   font-weight: 600;
+   margin: 1rem 0;
+   color: #333;
+   text-transform: capitalize;
+   font-size: 2rem;
+}
+
+.footer .box-container .box p {
+   line-height: 2;
+   font-size: 1.6rem;
+   color: #666;
+}
+
+.footer .ftr__content {
+   text-align: center;
+   margin-top: 3rem;
+   padding: 1rem 0;
+   padding-top: 3rem;
+   border-top: .1rem solid #666;
+   font-size: 2rem;
+   color: white;
+   /* padding-bottom: 8rem; */
+}
+
+.footer .ftr__content .terms-link {
+   font-size: 2rem;
+   color: white;
+}
+
+
+.footer .ftr__content span {
+   color: #e74c3c;
+}

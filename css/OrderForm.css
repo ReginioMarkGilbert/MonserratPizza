@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+    font-size: 30px
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7.5rem;
+}
+
+body {
+    background-image: url(../images/bg-image.jpg);
+}
+
+section {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.heading {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.header .flex p {
+    /*Montserrat Pizza - Montserrat*/
+    color: #ffffff;
+    font-family: "Sansita Swashed", cursive;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.header .flex p span {
+    /*Montserrat Pizza - Pizza*/
+    font-family: "sansinita swashed", cursive;
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 32px;
+    color: #ffe600;
+    text-align: center;
+    word-spacing: 0px;
+    display: block;
+    cursor: pointer;
+    margin-right: 40vh;
+}
+
+.header .flex .logo {
+    /* LOGO */
+    font-size: 2.5rem;
+    color: white;
+}
+
+.logo {
+    transition: transform 0.3s ease;
+    width: 60px;
+    height: 60px;
+}
+
+.logo:hover {
+    transform: rotate(30deg);
+}
+
+/* NAV MENU */
+.header {
+    /*nav bar*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #121618;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    z-index: 1000;
+}
+
+.header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    right: 100px;
+}
+
+.navigation-menu {
+    /* container nav */
+    display: flex;
+    list-style: none;
+    align-items: end;
+}
+
+.navigation-menu li {
+    /* space between each nav text */
+    margin-right: 25px;
+}
+
+.navigation-menu li a {
+    /* where we can move the whole nav */
+    color: white;
+    text-decoration: none;
+    font-size: 16px !important;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    transition: color 0.3s ease;
+
+    position: relative;
+    /* move nav to right */
+    left: 18rem;
+}
+
+.navigation-menu li a:hover {
+    color: rgb(236, 77, 4);
+}
+
+.navigation-menu li a {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+.header .flex .icons-container {
+    position: relative;
+    left: 150px;
+
+}
+
+.header .flex .icons-container div {
+    font-size: 2.5rem;
+    color: #666;
+    cursor: pointer;
+    margin-left: 1.7rem;
+}
+
+.header .flex .icons-container div:hover {
+    color: #e74c3c;
+}
+
+.header .flex .icons-container div span {
+    font-size: 1.7rem;
+    position: absolute;
+    bottom: 12px;
+    left: 8.3em;
+}
+
+/* ORDER */
+.order form {
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 2rem;
+    border-radius: 20px;
+
+    position: relative;
+    top: 100px;
+}
+
+.order form .display-orders {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 3rem 2rem;
+    background-color: #f5f5f5;
+    border-radius: .5rem;
+}
+
+.order form .display-orders p {
+    font-size: 2rem;
+    color: #666;
+    background-color: #fff;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.order form .display-orders p span {
+    color: #e74c3c;
+}
+
+.order form .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.order form .flex .inputBox {
+    width: 49%;
+}
+
+.order form .flex .inputBox span {
+    font-size: 1.8rem;
+    color: #666;
+}
+
+.order form .flex .inputBox .box {
+    /* text box*/
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: #333;
+    border-radius: .5rem;
+    margin: 1rem 0;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.payment-method select {
+    margin-right: 10px;
+}
+
+.payment-method-icons {
+    display: flex;
+    align-items: center;
+}
+
+.payment-method-icons img {
+    margin-left: 35px;
+    margin-right: -15px;
+    height: 30px;
+}
+
+.order-text {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    color: #fff;
+    /*background-color: rgb(201, 98, 30);*/
+    background-color: #067737;
+    cursor: pointer;
+    text-transform: capitalize;
+    text-align: center;
+}

@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+    font-size: 30px
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7.5rem;
+}
+
+body {
+    background-image: url(../images/bg-image.jpg);
+}
+
+.flex {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.heading {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.header .flex p {
+    /*Montserrat Pizza - Montserrat*/
+    color: #ffffff;
+    font-family: "Sansita Swashed", cursive;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.header .flex p span {
+    /*Montserrat Pizza - Pizza*/
+    font-family: "sansinita swashed", cursive;
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 32px;
+    color: #ffe600;
+    text-align: center;
+    word-spacing: 0px;
+    display: block;
+    cursor: pointer;
+    margin-right: 40vh;
+}
+
+.header .flex .logo {
+    /* LOGO */
+    font-size: 2.5rem;
+    color: white;
+}
+
+.logo {
+    transition: transform 0.3s ease;
+    width: 60px;
+    height: 60px;
+}
+
+.logo:hover {
+    transform: rotate(30deg);
+}
+
+/* NAV MENU */
+.header {
+    /*nav bar*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #121618;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    z-index: 1000;
+}
+
+.header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    right: 100px;
+}
+
+.navigation-menu {
+    /* container nav */
+    display: flex;
+    list-style: none;
+    align-items: end;
+}
+
+.navigation-menu li {
+    /* space between each nav text */
+    margin-right: 25px;
+}
+
+.navigation-menu li a {
+    /* where we can move the whole nav */
+    color: white;
+    text-decoration: none;
+    font-size: 16px !important;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    transition: color 0.3s ease;
+
+    position: relative;
+    /* move nav to right */
+    left: 18rem;
+}
+
+.navigation-menu li a:hover {
+    color: rgb(236, 77, 4);
+}
+
+.navigation-menu li a {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+.header .flex .icons-container {
+    position: relative;
+    left: 150px;
+}
+
+.header .flex .icons-container div {
+    font-size: 2.5rem;
+    color: #666;
+    cursor: pointer;
+    margin-left: 1.7rem;
+}
+
+.header .flex .icons-container div:hover {
+    color: #e74c3c;
+}
+
+.header .flex .icons-container div span {
+    font-size: 1.7rem;
+    position: absolute;
+    bottom: 12px;
+    left: 8.3em;
+}
+
+.blog_section {
+    margin-top: 10rem;
+}
+
+.blog_headings_container {
+    position: relative;
+    left: 10rem;
+    top: 3rem;
+}
+
+/* .blog_headings_container p {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+} */
+
+.blog_headings_container h1 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 5.5rem;
+}
+
+.blog_headings_container .para_bottom {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem; /* Increased font size */      
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.blog_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the minmax values as needed */
+    gap: 5rem;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4em;
+}
+
+.blog_box_container img {
+    width: 10em; /* Set a specific width for the images */
+    /* height: auto; */
+    border-radius: 8px;
+    margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+.blog_box_container p {
+    color: white;
+    font-size: 12px; /* Increased font size */
+    margin-bottom: 5px;
+}
+
+.img_heading {
+    color: white;
+    font-size: 24px; /* Increased font size */
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    margin-bottom: 10px;
+}
+
+.img_heading:hover {
+    color:rgb(238, 69, 69);
+    cursor: pointer;
+}
+
+.img_description {
+    color: white;
+    font-size: 15px; /* Increased font size */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+

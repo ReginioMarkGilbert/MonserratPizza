@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+    <script src="https://kit.fontawesome.com/34217e7a84.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/logo.png">
+    <title>Monserrat Pizza Shop Online</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/OrderForm.css">
+
+</head>
+<body>
+
+<header class="header">
+
+    <section class="flex">
+    
+    <img width="50" height="50" class="logo" src="images/logo.png" alt="Pizza Time logo" style="">
+    <p style>
+        Monserrat 
+        <span style>Pizza</span>
+
+    <nav class="main-nav flex-container flex-row txt-center"></nav>
+        <ul class="navigation-menu flex-row pop-font" style>
+            <li>
+            <a class="txt-white" href="/index.html" style>Home</a>
+            </li>
+            <li>
+            <a class="txt-white" href="#contacts" style>Contacts</a>
+            </li>
+            <li>
+            <a class="txt-white" href="/menu.html">Menu</a>
+            </li>
+            <li>
+            <a class="txt-white" href="/OrderForm.html">Order</a>
+            </li>
+            <li>
+            <a class="txt-white" href="/blog.html" style>Blogs</a>
+            </li>
+            <li>
+            <a class="txt-white" href="/about.html" style>About</a>
+            </li>
+        </ul>
+    </nav>
+
+        <div class="icons-container">
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="order-btn" class="fas fa-box"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+        </div>
+    
+    </section>
+
+</header>
+
+<!-- order section starts  -->
+<section class="order" id="order">
+
+    <h1 class="heading">order now</h1>
+
+    <form action="" method="post">
+
+    <div class="display-orders">
+        <p>Margherita <span>( ₱249/- x 2 )</span></p>
+        <p>Italian <span>( ₱699/- x 1 )</span></p>
+        <p>Prima <span>( ₱449/- x 4 )</span></p>
+        <p>Tuscan <span>( ₱199/- x 1 )</span></p>
+    </div>
+
+    <div class="flex">
+        <div class="inputBox">
+            <span>Enter your name :</span>
+            <input type="text" name="name" class="box" required placeholder="Enter your name" maxlength="20">
+        </div>
+        <div class="inputBox">
+            <span>Enter your number :</span>
+            <input type="number" name="number" class="box" required placeholder="Enter your number" min="0">
+        </div>
+        <div class="inputBox">
+            <span>Payment method</span>
+            <select name="method" class="box">
+            <option value="cash on delivery">Cash on delivery</option>
+            <option value="credit card">Credit card</option>
+            <option value="paytm">Gcash</option>
+            <option value="paypal">Paypal</option>
+            <option value="COD">Cash On Delivery</option>
+            </select>
+        </div>
+        <div class="inputBox">
+            <span>Address line 01 :</span>
+            <input type="text" name="flat" class="box" required placeholder="Address" maxlength="50">
+        </div>
+        <div class="inputBox">
+            <span>Address line 02 :</span>
+            <input type="text" name="street" class="box" required placeholder="Street name" maxlength="50">
+        </div>
+        <div class="inputBox">
+            <span>Mode of Payment :</span>
+            <div class="payment-method">
+            <select name="payment_method" class="box">
+                <option value="gcash">Gcash</option>
+                <option value="paypal">Paypal</option>
+                <option value="credit_card">Credit Card</option>
+                <option value="cod">Cash on Delivery</option>
+            </select>
+            <div class="payment-method-icons">
+                <img src="images/Gcash.jpg" alt="Gcash Icon" class="gcash-icon">
+                <img src="images/paypal.png" alt="Paypal Icon" class="paypal-icon">
+                <img src="images/creditcard.png" alt="Credit Card Icon" class="credit-card-icon">
+                <img src="images/cod.png" alt="" class="credit-card-icon">
+            </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <input type="submit" value="order now" class="btn" name="order">
+
+    </form>
+
+</section>
+
+<!-- order section ends -->
+
+</body>
+</html>
